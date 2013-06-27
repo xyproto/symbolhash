@@ -1,17 +1,18 @@
 symbolhash
 ==========
 
-Given a string, returns a unicode hash of the desired length
+Given a string, returns a unicode hash of the desired length.
+
+The entropy is reflected in how much repetition there is in the resulting hash.
 
 Example
 -------
 
 Example input and output:
 
-"Several different words lalalalala" -> ♥☻☘⇧❤❄תּ☂☢♞✂♻⚡▷☮♥
-"hi" -> ☭☢☭☢☭☢☭☢☭☢☭☢☭☢☭☢
+```"Several different words lalalalala"```, 16 -> ```♥☻☘⇧❤❄תּ☂☢♞✂♻⚡▷☮♥```
 
-The entropy is reflected in how much repetition there is in the resulting hash.
+```"hi"```, 16 -> ```☭☢☭☢☭☢☭☢☭☢☭☢☭☢☭☢```
 
 License and author
 ------------------
