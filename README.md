@@ -6,7 +6,7 @@ Description
 
 Given a string, returns a unicode hash of the desired length.
 
-The entropy is reflected in how much repetition there is in the resulting hash.
+The entropy is reflected by how much repetition there is in the resulting hash.
 
 Example
 -------
