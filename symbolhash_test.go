@@ -17,4 +17,7 @@ func Test1(t *testing.T) {
 	fmt.Println(New("var", 16))
 	fmt.Println(New("her", 16))
 	fmt.Println(New("abc123HalloHalloDerJajajajaja", 16))
+
+	fmt.Println(New("Several different words lalalalala", 16))
+	fmt.Println(New("hi", 16))
 }
