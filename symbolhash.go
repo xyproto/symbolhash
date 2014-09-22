@@ -1,7 +1,9 @@
 package symbolhash
 
-// A package for representing a string as a unicode hash of a given size.
+// Package for representing a string as a unicode hash of a given size.
 // Less entropy is represented as more repetition.
+// Useful for listing sensitive data like passwords, without revealing the actual data,
+// for instance in a control panel for administrators.
 
 import (
 	"strings"
@@ -11,6 +13,11 @@ import (
 type SymbolHash struct {
 	data string
 	size int
+}
+
+// Create a new SymbolHash, takes a string and a length
+func New(data string, size int) *SymbolHash {
+	return &SymbolHash{data, size}
 }
 
 // Returns a unicode representation hash
@@ -65,9 +72,4 @@ func (hash *SymbolHash) String() string {
 	}
 
 	return retval
-}
-
-// Create a new SymbolHash, takes a string and a length
-func New(data string, size int) *SymbolHash {
-	return &SymbolHash{data, size}
 }
