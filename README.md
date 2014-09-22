@@ -1,8 +1,17 @@
 symbolhash
 ==========
 
-Description
------------
+[![Build Status](https://travis-ci.org/xyproto/symbolhash.svg?branch=master)](https://travis-ci.org/xyproto/symbolhash)
+[![GoDoc](https://godoc.org/github.com/xyproto/symbolhash?status.svg)](http://godoc.org/github.com/xyproto/symbolhash)
+
+
+Online API Documentation
+------------------------
+
+[godoc.org](http://godoc.org/github.com/xyproto/symbolhash)
+
+Features and limitations
+------------------------
 
 Given a string, returns a unicode hash of the desired length.
 
@@ -22,6 +31,5 @@ Example input and output:
 License and author
 ------------------
 
-MIT license
-
-Alexander Rødseth, 2013
+* License: MIT
+* Alexander F Rødseth
