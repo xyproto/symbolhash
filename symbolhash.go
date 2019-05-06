@@ -20,6 +20,13 @@ func New(data string, size int) *SymbolHash {
 	return &SymbolHash{data, size}
 }
 
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
 // Returns a unicode representation hash
 func (hash *SymbolHash) String() string {
 	var (
@@ -67,8 +74,8 @@ func (hash *SymbolHash) String() string {
 	}
 
 	// If it's too long, cut it
-	for utf8.RuneCountInString(retval) > hash.size {
-		retval = retval[:len(retval)-1]
+	if utf8.RuneCountInString(retval) > hash.size {
+		retval = retval[:min(len(retval), hash.size)]
 	}
 
 	return retval
